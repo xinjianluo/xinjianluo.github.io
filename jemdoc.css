@@ -1,10 +1,19 @@
 /* Default css file for jemdoc. */
 
-table#tlayout {
+#tablecontent{
     border: none;
-    border-collapse: separate;
+    border-collapse: collapse;
+    background: white;
+	height: 100%;
+}
+
+#outtable {
+	border: none;
+    border-collapse: collapse;
     background: white;
 }
+
+
 
 body {
 	background: white;
@@ -13,22 +22,51 @@ body {
 	margin: 0;
 }
 
-#layout-menu {
+#divmenu {
+	position: fixed;
+}
+
+#layout-menu {	
 	background: #f6f6f6;
 	border: 1px solid #dddddd;
 	padding-top: 0.5em;
 	padding-left: 8px;
 	padding-right: 8px;
 	font-size: 1.0em;
-	width: auto;
+	width: 8.8em;
 	white-space: nowrap;
     text-align: left;
     vertical-align: top;
+	
+	
 }
 
-#layout-menu td {
+#outtd-content {
+	border-collapse: collapse;
+	background: white;
+	border: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#outtd-menu {
+	border-collapse: collapse;
+	border: none;
+	padding: 0px;
+	margin: 0px;
 	background: #f4f4f4;
     vertical-align: top;
+	width: 15%;
+}
+
+
+#layout-menu td {
+	border-collapse: collapse;
+	background: white;
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
 }
 
 #layout-content {
@@ -44,6 +82,7 @@ body {
 #layout-menu a {
 	line-height: 1.5em;
 	margin-left: 0.5em;
+	height: 100%;
 }
 
 tt {
