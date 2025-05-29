@@ -10,35 +10,49 @@
 #outtable {
 	border: none;
     border-collapse: collapse;
-    background: white;
+	background: #f8f9fa;
 }
 
 
 
 body {
-	background: white;
-	font-family: Georgia, serif;
+	background: #f8f9fa;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 	padding-bottom: 8px;
 	margin: 0;
+	line-height: 1.6;
+	color: #2c3e50;
 }
 
 #divmenu {
 	position: fixed;
+	top: 2rem;
 }
 
 #layout-menu {	
-	background: #f6f6f6;
-	border: 1px solid #dddddd;
-	padding-top: 0.5em;
-	padding-left: 8px;
-	padding-right: 8px;
-	font-size: 1.0em;
-	width: 9em;
+	background: #f8f9fa;
+	border: none;
+	padding: 2rem 1.5rem;
+	font-size: 1.1em;
+	width: 10em;
 	white-space: nowrap;
     text-align: left;
     vertical-align: top;
-	
-	
+    border-right: 1px solid #e9ecef;
+    position: relative;
+}
+
+#layout-menu::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to bottom, 
+        rgba(52, 152, 219, 0.1),
+        rgba(52, 152, 219, 0.2),
+        rgba(52, 152, 219, 0.1));
 }
 
 #outtd-content {
@@ -47,6 +61,7 @@ body {
 	border: none;
 	padding: 0px;
 	margin: 0px;
+	position: relative;
 }
 
 #outtd-menu {
@@ -83,6 +98,7 @@ body {
 	line-height: 1.5em;
 	margin-left: 0.5em;
 	height: 100%;
+	border-bottom: 0.8px solid #e9ecef;
 }
 
 tt {
@@ -95,43 +111,69 @@ pre, tt {
 }
 
 a, a > tt {
-	color: #224b8d;
+	color: #3182ce;
 	text-decoration: none;
+	transition: color 0.2s ease;
 }
 
 a:hover {
-	border-bottom: 1px gray dotted;
+	border-bottom: 2px solid currentColor;
 }
 
-#layout-menu a.current:link, #layout-menu a.current:visited {
-	color: #022b6d;
-	border-bottom: 1px gray solid;
-}
-#layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
-	color: #527bbd;
-	text-decoration: none;
-}
+
 #layout-menu a:hover {
+	color: #3498db;
 	text-decoration: none;
+	border-bottom: 1px solid #e9ecef;
 }
 
 div.menu-category {
-	border-bottom: 1px solid gray;
-	margin-top: 0.8em;
-	padding-top: 0.2em;
-	padding-bottom: 0.1em;
-	font-weight: bold;
+	border-bottom: 2px solid #e9ecef;
+	margin-top: 1.5em;
+	padding: 0.5em 0;
+	font-weight: 600;
+	color: #2c3e50;
+	font-size: 1.1em;
+	letter-spacing: -0.2px;
 }
 
 div.menu-item {
-	padding-left: 16px;
-	text-indent: -16px;
+	padding: 0.5em 0;
+	text-indent: 0;
+	margin: 0.2em 0;
+	transition: all 0.3s ease;
+	
+}
+
+div.menu-item a {
+	display: block;
+	padding: 0.3em 0;
+	color: #2c3e50;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1.05em;
+	letter-spacing: -0.2px;
+	transition: all 0.3s ease;
+	position: relative;
+}
+
+div.menu-item a:hover {
+	color: #3498db;
+	transform: translateX(5px);
+
 }
 
 div#toptitle {
-	padding-bottom: 0.2em;
-	margin-bottom: 1.5em;
-	border-bottom: 3px double gray;
+	padding-bottom: 0.3em;
+	margin-bottom: 1.8em;
+	border-bottom: 2px solid #e0e0e0;
+}
+
+div#toptitle h1 {
+	font-size: 2.4em;
+	font-weight: 700;
+	color: #2c3e50;
+	letter-spacing: -0.5px;
 }
 
 /* Reduce space if we begin the page with a title. */
@@ -156,22 +198,29 @@ strong {
 
 
 h1, h2, h3 {
-	color: #527bbd;
-	margin-top: 0.7em;
-	margin-bottom: 0.3em;
+	color: #2c3e50;
+	margin-top: 0.6em;
+	margin-bottom: 0.1em;
 	padding-bottom: 0.2em;
-	line-height: 1.0;
+	line-height: 1.3;
 	padding-top: 0.5em;
-	border-bottom: 1px solid #aaaaaa;
+	border-bottom: 1px solid #e0e0e0;
+	font-weight: 600;
+}
+
+#sec-bio {
+	margin-top: 0.8em;
+
 }
 
 h1 {
-	font-size: 165%;
+	font-size: 2.2em;
+	letter-spacing: -0.5px;
 }
 
 h2 {
-	padding-top: 0.8em;
-	font-size: 125%;
+	font-size: 1.6em;
+	letter-spacing: -0.3px;
 }
 
 h2 + h3 {
@@ -179,15 +228,18 @@ h2 + h3 {
 }
 
 h3 {
-	font-size: 110%;
+	font-size: 1.3em;
 	border-bottom: none;
+	letter-spacing: -0.2px;
 }
 
 p {
 	margin-top: 0.0em;
-	margin-bottom: 0.8em;
+	margin-bottom: 0.6em;
 	padding: 0;
-	line-height: 1.3;
+	line-height: 1.6;
+	font-size: 1.05em;
+	font-weight: 400;
 }
 
 pre {
@@ -255,6 +307,9 @@ ol {
 
 li p, dd p {
 	margin-bottom: 0.3em;
+
+
+	line-height: 1.6;
 }
 
 
@@ -403,4 +458,4 @@ img {
 table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
-}
+} 
