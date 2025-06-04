@@ -120,7 +120,6 @@ a:hover {
 	border-bottom: 2px solid currentColor;
 }
 
-
 #layout-menu a:hover {
 	color: #3498db;
 	text-decoration: none;
@@ -235,7 +234,7 @@ h3 {
 
 p {
 	margin-top: 0.0em;
-	margin-bottom: 0.6em;
+	margin-bottom: 0.8em;
 	padding: 0;
 	line-height: 1.6;
 	font-size: 1.05em;
@@ -489,8 +488,17 @@ table.imgtable, table.imgtable td {
     color: #34495e;
     line-height: 1.5;
     flex: 1;
-    display: flex;
-    gap: 10px;
+    display: inline;
+}
+
+.news-content a {
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.news-content a:hover {
+    border-bottom-color: currentColor;
 }
 
 
