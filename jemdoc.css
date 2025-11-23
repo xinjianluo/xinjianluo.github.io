@@ -501,4 +501,170 @@ table.imgtable, table.imgtable td {
     border-bottom-color: currentColor;
 }
 
+/* arXiv Button Styles */
+.arxiv-btn {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 8px;
+    font-size: 0.7em;
+    font-weight: 500;
+    color: #6366f1;
+    background: transparent;
+    border: 1px solid #e0e7ff;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    vertical-align: middle;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    white-space: nowrap;
+}
+
+.arxiv-btn:hover {
+    color: #4f46e5;
+    background: #eef2ff;
+    border-color: #c7d2fe;
+    transform: translateY(-1px);
+    box-shadow: 0 1px 3px rgba(99, 102, 241, 0.1);
+}
+
+.arxiv-btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Hide buttons with placeholder arXiv links */
+.arxiv-btn[href*="XXXX.XXXXX"] {
+    display: none;
+}
+
+/* Ensure paper titles with buttons maintain clean layout */
+#sec-papers li p a:first-of-type {
+    display: inline-block;
+}
+
+/* Section Header Button Styles */
+.section-btn {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 0;
+    font-size: 0.55em;
+    font-weight: 400;
+    color: #3182ce;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    vertical-align: baseline;
+    line-height: 1;
+    letter-spacing: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    white-space: nowrap;
+}
+
+.section-btn:hover {
+    color: #3182ce;
+    background: transparent;
+    border: none;
+    transform: none;
+    box-shadow: none;
+    border-bottom: 2px solid currentColor;
+}
+
+.section-btn:active {
+    color: #3182ce;
+}
+
+/* Publication List Styles */
+.publication-list {
+    margin: 15px 0;
+    padding: 0;
+}
+
+#sec-conferences + .publication-list {
+    counter-reset: conference-counter;
+}
+
+#sec-journals + .publication-list {
+    counter-reset: journal-counter;
+}
+
+.publication-item {
+    margin-bottom: 0.15em;
+    margin-top: 0;
+    padding: 0;
+    padding-left: 1.8em;
+    line-height: 1.6;
+    font-size: 0.95em;
+    color: #2c3e50;
+    position: relative;
+}
+
+#sec-conferences + .publication-list .publication-item {
+    counter-increment: conference-counter;
+}
+
+#sec-journals + .publication-list .publication-item {
+    counter-increment: journal-counter;
+}
+
+#sec-conferences + .publication-list .publication-item::before {
+    content: counter(conference-counter) ".";
+    position: absolute;
+    left: 0;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+#sec-journals + .publication-list .publication-item::before {
+    content: counter(journal-counter) ".";
+    position: absolute;
+    left: 0;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+
+.publication-authors {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.publication-year {
+    font-weight: 500;
+    color: #6366f1;
+}
+
+.publication-title {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.publication-title a {
+    color: #3182ce;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.publication-title a:hover {
+    border-bottom: 2px solid currentColor;
+}
+
+.publication-venue {
+    font-style: italic;
+    color: #5a6c7d;
+}
+
+/* Publication Section Headings */
+#sec-conferences, #sec-journals {
+    font-size: 1.575em;
+    border-bottom: none;
+    margin-top: 1.2em;
+    margin-bottom: 0.3em;
+    padding-bottom: 0;
+    padding-top: 0.3em;
+}
+
 
