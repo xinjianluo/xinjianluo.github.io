@@ -502,7 +502,8 @@ table.imgtable, table.imgtable td {
 }
 
 /* arXiv Button Styles */
-.arxiv-btn {
+.arxiv-btn,
+.pdf-btn {
     display: inline-block;
     margin-left: 8px;
     padding: 2px 8px;
@@ -521,7 +522,8 @@ table.imgtable, table.imgtable td {
     white-space: nowrap;
 }
 
-.arxiv-btn:hover {
+.arxiv-btn:hover,
+.pdf-btn:hover {
     color: #4f46e5;
     background: #eef2ff;
     border-color: #c7d2fe;
@@ -529,13 +531,15 @@ table.imgtable, table.imgtable td {
     box-shadow: 0 1px 3px rgba(99, 102, 241, 0.1);
 }
 
-.arxiv-btn:active {
+.arxiv-btn:active,
+.pdf-btn:active {
     transform: translateY(0);
     box-shadow: none;
 }
 
 /* Hide buttons with placeholder arXiv links */
-.arxiv-btn[href*="XXXX.XXXXX"] {
+.arxiv-btn[href*="XXXX.XXXXX"],
+.pdf-btn[href*="pdf/XXXX.XXXXX"] {
     display: none;
 }
 
