@@ -828,109 +828,109 @@ table.imgtable, table.imgtable td {
     margin-top: 0;
 }
 
-@media (max-width: 760px) {
-    #outtable,
-    #outtable > tbody,
-    #outtable > tbody > tr,
-    #layout-menu,
-    #outtd-content,
-    #tablecontent,
-    #tablecontent > tbody,
-    #tablecontent > tbody > tr,
-    #layout-content {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-    }
+/* @media (max-width: 760px) { */
+    /* #outtable, */
+    /* #outtable > tbody, */
+    /* #outtable > tbody > tr, */
+    /* #layout-menu, */
+    /* #outtd-content, */
+    /* #tablecontent, */
+    /* #tablecontent > tbody, */
+    /* #tablecontent > tbody > tr, */
+    /* #layout-content { */
+        /* display: block; */
+        /* width: 100%; */
+        /* box-sizing: border-box; */
+    /* } */
 
-    #layout-menu {
-        padding: 0.8rem 1rem;
-        border-right: none;
-        border-bottom: 1px solid #e9ecef;
-        white-space: normal;
-    }
+    /* #layout-menu { */
+        /* padding: 0.8rem 1rem; */
+        /* border-right: none; */
+        /* border-bottom: 1px solid #e9ecef; */
+        /* white-space: normal; */
+    /* } */
 
-    #layout-menu::after {
-        display: none;
-    }
+    /* #layout-menu::after { */
+        /* display: none; */
+    /* } */
 
-    #divmenu {
-        position: static;
-        top: auto;
-    }
+    /* #divmenu { */
+        /* position: static; */
+        /* top: auto; */
+    /* } */
 
-    div.menu-category {
-        margin-top: 0;
-        padding: 0.2em 0 0.45em;
-    }
+    /* div.menu-category { */
+        /* margin-top: 0; */
+        /* padding: 0.2em 0 0.45em; */
+    /* } */
 
-    div.menu-item {
-        display: inline-block;
-        margin: 0 0.8em 0.25em 0;
-        padding: 0;
-    }
+    /* div.menu-item { */
+        /* display: inline-block; */
+        /* margin: 0 0.8em 0.25em 0; */
+        /* padding: 0; */
+    /* } */
 
-    div.menu-item a {
-        font-size: 0.95em;
-        padding: 0.2em 0;
-    }
+    /* div.menu-item a { */
+        /* font-size: 0.95em; */
+        /* padding: 0.2em 0; */
+    /* } */
 
-    div.menu-item a:hover {
-        transform: none;
-    }
+    /* div.menu-item a:hover { */
+        /* transform: none; */
+    /* } */
 
-    #layout-content {
-        padding: 0 1rem;
-    }
+    /* #layout-content { */
+        /* padding: 0 1rem; */
+    /* } */
 
-    div#toptitle h1 {
-        font-size: 2em;
-    }
+    /* div#toptitle h1 { */
+        /* font-size: 2em; */
+    /* } */
 
-    h2 {
-        font-size: 1.35em;
-    }
+    /* h2 { */
+        /* font-size: 1.35em; */
+    /* } */
 
-    table.imgtable,
-    table.imgtable tbody,
-    table.imgtable tr,
-    table.imgtable td {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-    }
+    /* table.imgtable, */
+    /* table.imgtable tbody, */
+    /* table.imgtable tr, */
+    /* table.imgtable td { */
+        /* display: block; */
+        /* width: 100%; */
+        /* box-sizing: border-box; */
+    /* } */
 
-    table.imgtable img {
-        width: 180px;
-        height: auto;
-        margin-bottom: 0.8em;
-    }
+    /* table.imgtable img { */
+        /* width: 180px; */
+        /* height: auto; */
+        /* margin-bottom: 0.8em; */
+    /* } */
 
-    .recruiting-note {
-        margin: 0.8em 0 1.1em;
-        padding: 0.7em 0.85em;
-        font-size: 1em;
-    }
+    /* .recruiting-note { */
+        /* margin: 0.8em 0 1.1em; */
+        /* padding: 0.7em 0.85em; */
+        /* font-size: 1em; */
+    /* } */
 
-    .news-container {
-        max-height: 230px;
-        padding: 8px 10px;
-    }
+    /* .news-container { */
+        /* max-height: 230px; */
+        /* padding: 8px 10px; */
+    /* } */
 
-    .news-item {
-        align-items: flex-start;
-        gap: 8px;
-    }
+    /* .news-item { */
+        /* align-items: flex-start; */
+        /* gap: 8px; */
+    /* } */
 
-    .news-date {
-        width: 92px;
-        font-size: 0.9em;
-    }
+    /* .news-date { */
+        /* width: 92px; */
+        /* font-size: 0.9em; */
+    /* } */
 
-    .student-card {
-        display: block;
-    }
-}
+    /* .student-card { */
+        /* display: block; */
+    /* } */
+/* } */
 
 /* Publication Section Headings */
 #sec-conferences, #sec-journals {
