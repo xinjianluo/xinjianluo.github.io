@@ -705,6 +705,19 @@ table.imgtable, table.imgtable td {
     color: #5a6c7d;
 }
 
+.publication-legend {
+    margin: 0.15em 0 0;
+    padding: 0;
+    font-size: 0.88em;
+    line-height: 1.4;
+    color: #5a6c7d;
+}
+
+#toptitle:has(.publication-legend) {
+    margin-bottom: 1em;
+    padding-bottom: 0.25em;
+}
+
 .group-intro {
     margin: 0.5em 0 1.2em;
 }
